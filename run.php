@@ -14,12 +14,12 @@ if (count($config['table']) > 20) {
 }
 
 try {
-    if (!class_exists(\Swoole\Process::class)) {
-        \Sss\SyncDatabase::swooleRun($config['from'], $config['to'], $config['table'], $config['page_size']);
-    } else {
+//    if (!class_exists(\Swoole\Process::class)) {
+//        \Sss\SyncDatabase::swooleRun($config['from'], $config['to'], $config['table'], $config['page_size']);
+//    } else {
 //        \Sss\SyncDatabase::taskRun($config['from'], $config['to'], $config['table'], $config['page_size']);
-        \Sss\SyncDatabase::taskRunAll($config['from'], $config['to'], $config['page_size']);
-    }
+//    }
+    \Sss\SyncDatabase::taskRunAll($config['from'], $config['to'], $config['page_size']);
 } catch (Throwable $e) {
     echo 'ERROR: ' . $e->getMessage() . PHP_EOL;
 }
