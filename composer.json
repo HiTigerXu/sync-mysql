@@ -1,0 +1,19 @@
+{
+  "config": {
+    "secure-http": false
+  },
+  "autoload": {
+    "psr-4": {
+      "Sss\\": "src/sss"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  },
+  "require": {
+    "baagee/async-task": "^0.1.2"
+  }
+}
