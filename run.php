@@ -1,5 +1,5 @@
 <?php
-
+ini_set('date.timezone','Asia/Shanghai');
 ini_set('display_errors', 1);
 // error_reporting(E_ALL);
 
